@@ -1,0 +1,204 @@
+/*
+kleurenpalet: grijs (#666) - lichtgrijs (#aeaca8) - donker roze (#de6581) - zwart - gebroken wit (#eee)
+*/
+
+
+/*
+STAP 1:
+zorg voor dat width en heigth gelden voor content - padding - border 
+bij de gepaste elementen
+*/
+
+header,
+section,
+aside,
+article,
+footer,
+.description {
+    box-sizing: border-box;
+}
+
+
+/* 
+STAP 2:
+kleur - lettertype (sans-serf lettertype) - lijn hoogte (1.2) - een kleiner lettertype 
+*/
+
+body {
+    color: #666;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.2;
+    font-size: 0.9em;
+}
+
+
+/*
+STAP 3: maak de gepaste blokken los uit de normale flow 
+Courses (image en beschrijving) 70% en Recipes en contact 30%
+Let op voor container collapse
+*/
+
+.courses {
+    float: left;
+    width: 70%;
+}
+
+
+/* aside floating */
+
+aside {
+    width: 30%;
+    float: left;
+}
+
+
+/*nav en footer geen floating*/
+
+nav,
+footer {
+    clear: both;
+}
+
+
+/* container collapse */
+
+article {
+    margin: 1em;
+    overflow: auto;
+}
+
+
+/* 
+STAP 4: opmaak header (kleur - bg-image - hoogte afbeelding header)
+*/
+
+header {
+    background-color: #aeaca8;
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top right;
+}
+
+header picture {
+    height: 130px;
+}
+
+
+/* 
+STAP 5: Menubalk */
+
+nav ul {
+    display: block;
+    padding: .1em;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: .5em;
+    padding-left: .5em;
+}
+
+nav a:hover {
+    color: #de6581;
+}
+
+nav li a {
+    display: block;
+    padding: .5em .8em;
+    text-decoration: none;
+    color: black
+}
+
+nav li a.current {
+    color: black;
+    cursor: default;
+}
+
+
+/*
+STAP 6
+opmaak afbeeldingen en beschrijving:
+dimensies komen overeen met dimensies van *.jpg
+kadertje eromheen met ruimte tussen kader en afbeelding
+beschrijving komt rechts van de afbeelding te staan
+en extra ruimte tussen afbeelding en beschrijving
+figcaption kleiner lettertype
+extra ruimte tussen description en rechtse content
+*/
+
+figure {
+    float: left;
+    width: 290px;
+    height: 220px;
+    margin-right: 1.5em;
+    padding: 1em 1em 0.3em;
+    border: 1px solid #eee;
+}
+
+figcaption {
+    font-size: .9em;
+}
+
+.description {
+    padding-right: 0.5em;
+}
+
+
+/*
+STAP 7
+Overige opmaak
+opmaak anchors in aside
+meer afstand tussen recipes en contact
+opmaak headings
+opmaak nav en footer
+*/
+
+aside section a {
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+aside section a:hover {
+    color: #985d6a;
+    background-color: #eee;
+}
+
+a {
+    color: #de6581;
+    text-decoration: none;
+}
+
+.popular-recipes {
+    padding-bottom: 3em;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.3em;
+    padding: 0.5em 0 0.1em;
+}
+
+h3 {
+    font-size: 1.1em;
+    padding: 0.4em 0;
+    color: #de6581;
+}
+
+nav,
+footer {
+    color: #eee;
+    background-color: #aeaca8;
+}
+
+footer {
+    text-align: center;
+    font-size: 75%;
+    height: 5%;
+}
