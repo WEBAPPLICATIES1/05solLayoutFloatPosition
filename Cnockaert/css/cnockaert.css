@@ -1,0 +1,81 @@
+body {
+  color: #4b4a4a;
+  font-family: Verdana, Arial, sans-serif;
+  padding: 15px;
+  background-color: #fff;
+  width: 890px; /**/
+  margin: 0 auto; /**/
+}
+
+h1 {
+  color: #004990;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 15px 0 15px 0;
+}
+h3 {
+  margin: 5px 0 0 0;
+  color: #004990;
+  font-weight: 600;
+  font-size: 1em;
+}
+p {
+  font-size: 0.9em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+}
+
+header {
+  margin: 20px;
+  overflow: auto;
+}
+
+header > aside {
+  float: right; /**/
+  width: 250px;
+  padding-left: 10px;
+  border-left: 0px solid white;
+}
+
+section {
+  width: 75%; /**/
+  float: left; /**/
+  margin-right: 1em;
+}
+
+article {
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+article .garage {
+  float: right; /**/
+  margin-left: 5px;
+}
+
+figure {
+  margin-bottom: 25px;
+  display: inline-block; /**/
+  width: 30%;
+}
+figure > img {
+  max-width: 195px; /**/
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+aside {
+  float: left; /**/
+  width: 20%; /**/
+  border-left: 1px grey solid;
+  padding-left: 1em;
+}
+
+footer {
+  background-color: #004990;
+  padding: 0.1em;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
+  clear: both; /**/
+}
